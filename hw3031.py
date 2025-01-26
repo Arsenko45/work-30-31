@@ -1,5 +1,6 @@
 from collections import UserDict
 from datetime import datetime, date
+add something dawdwa dawdwada
 
 class HandleExceptions:
     """Декоратор для обробки винятків."""
