@@ -24,3 +24,32 @@ while num<=-12
  if num%2==0:
    print(num+5)
  num=num+1
+
+num=0
+while num<=20:
+ num=num+1
+if num==5
+  continue
+if num==7:
+   continue
+print(num)
+
+number=-5
+while number<31:
+  if number%2==0:
+  print(number)
+number=number+1
+if number==-4 or number==8 or number==18
+   continue
+print(number)
+
+number=0
+while number<=50:
+  number=number+1
+  if 6<=number<=10:
+   continue
+  if 28<=number<=35:
+   continue
+  if number==3 or number==12 or number==26 or number==45:
+print(number)
+
