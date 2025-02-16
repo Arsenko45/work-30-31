@@ -1,0 +1,26 @@
+number=-4
+while number<=10:
+ print(number)
+ number=number+1
+
+num=0
+while num<=101:
+ print(num)
+ num=num+3
+
+number=1090897798749
+while number<=1090897798689:
+ print(number)
+ number=number+1
+
+num1=-6
+while num1<=80:
+ if num1%3==0:
+ print(num1)
+ num1=num1+2
+
+num=-67
+while num<=-12
+ if num%2==0:
+   print(num+5)
+ num=num+1
