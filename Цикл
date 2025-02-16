@@ -53,3 +53,38 @@ while number<=50:
   if number==3 or number==12 or number==26 or number==45:
 print(number)
 
+num=0
+while num<16:
+ num=num+1
+if num==3:
+   continue
+if num==8:
+   continue
+if num=12:
+break print(num)
+
+number=-12
+while number<=100:
+  number=number+1
+ if -8<=number<=-3 or 4<=number<=9:
+    continue
+ if 23<=number<=-35 or 41<=number<=57:
+    continue
+if number>81:
+break
+print(number)
+
+num=0
+while num<=12:
+ print("*"*num)
+ num=num+1
+
+num=0
+while num<=22:
+ print(end="*")
+ num=num+1
+
+num=2
+while num<=24:
+ print("*")
+ num=num+1
