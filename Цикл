@@ -88,3 +88,22 @@ num=2
 while num<=24:
  print("*")
  num=num+1
+
+numbers=int(input("ведіть числа без пробілів"))
+count=0
+while numbers !=0:
+  count+=1
+  numbers//=10
+print("кількість чисел:", count)
+
+number=1
+s=0
+s1=0
+while number<5:
+ n=int(input("ведіть число")
+ if n>0:
+    s+=1
+ elfit n<0:
+    s1+=1
+    number+=1
+    print"позитивні числа",s,"негативні числа",s1)
