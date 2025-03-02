@@ -40,5 +40,22 @@ location_info=place_name+","+capital_name+","+country_name
 print("Hi.I want to visit"+location_info.upper()+" in the next month")
 print("Hi, I want to visit"+location_info.upper()+"in the next month")
 
+#індекси
+text"There are 63,119 rivers and streams flowing through the territory of Ukraine with a total length of over"
+a=text[0:8]
+b=text[5:24]
+c=text[:-8]
+d=text[-31:-17]
+e=text[9:-23]
+r=text[1::3]
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(r)
+
 #Який методповертає індекс першого входження заданого під рядка в рядок
 text"There are 63,119 rivers and streams flowing through the territory of Ukraine with a total length of over 206,000 km, of which 3,302 are 10 km or longer [ 52 ]."
+str_1=text.find("63")
+print(str_1)
