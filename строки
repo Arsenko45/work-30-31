@@ -7,4 +7,38 @@ for simvol in text:
      num+=1
 print("Кількість цифр в страках-", num)
 
-заміна частини підрядка в рядках на інших
+#заміна частини підрядка в рядках на інших
+sring="I live in Ukraine and my name is   Yurri"
+str_one=string.replace("Yurri","Python")
+print(str_one)
+print(type(str_one))
+
+#Робота з рядками
+numbers="+3 rt8Oa 09erov g73hj0tt 774llj k5 my"
+numbers=numbers.replace("rt8Oa","80")
+num2=numbers.replace("09erov","97")
+num3=num2.replace("g73hj0tt',"562")
+num4=num3.replace("774llj',"2134")
+num5=num4.replace("k5 my","")
+
+#Переведем строку  у верхній регістр
+string_1="I go to school. My name"
+string_1=string_1.upper
+print(string_1)
+
+#Переведем строку  у нижній регістр
+text="My name is Yurri 567A"
+text=text.lower()
+print(type(text))
+print(text)
+
+#Складемо програму з відвідюваням музею
+place_name="Myzey Pirogova"
+capital_name="Kiyv"
+country_name="Ukraine"
+location_info=place_name+","+capital_name+","+country_name
+print("Hi.I want to visit"+location_info.upper()+" in the next month")
+print("Hi, I want to visit"+location_info.upper()+"in the next month")
+
+#Який методповертає індекс першого входження заданого під рядка в рядок
+text"There are 63,119 rivers and streams flowing through the territory of Ukraine with a total length of over 206,000 km, of which 3,302 are 10 km or longer [ 52 ]."
