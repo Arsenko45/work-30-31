@@ -60,10 +60,73 @@ print(r)
 #Який методповертає індекс першого входження заданого під рядка в рядок
 text"There are 63,119 rivers and streams flowing through the territory of Ukraine with a total length of over 206,000 km, of which 3,302 are 10 km or longer [ 52 ]."
 str_1=text.find("63")
-str_2=text.find("km")
+str_2=text.find("km")p
 str_3=txt.find("Ukr",12)
 str_4=txt.find("119",5)
 print(str_1)
 print(str_2)
 print(str_3)
 print(str_4)
+
+#дано строки підрахувати кількість елементів
+string=input("ведіть строки")
+print(len(string))
+t=input()
+number=int(t)
+a=str(number)
+print(string*3)
+print(striong+''+a)
+
+#дано строки підрахувати кількість літер в них
+words=unput("ведіть строки")
+count=0
+for symbols in words:
+    if symbol=="":
+       count=count+1
+print(count+1)
+
+#як розділити рядок із вказаним роздільником і повернути список
+text="i  work is microsoft and apple 123"
+x="text.split()
+print(type(x))
+print(x)
+
+text="i  work is microsoft and apple 123"
+string=text.split(",")
+print(string)
+
+text="i#work#is#microsoft*and#apple*123-qwerty"
+q=text.split("*",1)
+w=text.split("*",2)
+e=text.split("#",2)
+y=text.split("#",3)
+t=text.split(" ",2)
+print(q)
+print(w)
+print(e)
+print(y)
+print(t)
+
+string=input("ведіть строку")
+count=0
+for symbol in string:
+    if symbol.lower()=='n'
+       count=count+1
+print(count)
+
+text="i go t to school 123 !4!"
+print(text0.count(""))
+
+text="hello.i am {}.i learn {}."format("Yurri","Python")
+text2="hello.i am {}.i learn {} and my last name is {}."format("Yurri","Python","Sheva")
+print(type(text))
+print(text)
+print(text2)
+
+text="hello.i am {0}.and my name is {0}".format("Yurri")
+text2`="hello.i am {0}.and my name is {1} and i live in {2}".format("Yurri""Volodumr","Ukrain")
+print(text)
+print(text2)
+
+string="hello. i am {name}.i am is {age} years old".format(name="Yurri",age=32)
+print(string)
