@@ -130,3 +130,18 @@ print(text2)
 
 string="hello. i am {name}.i am is {age} years old".format(name="Yurri",age=32)
 print(string)
+
+string=input("ведіть строки:)
+words=string.split()
+loget=""
+for j in words:
+  if len(j)>len(longet):
+    longer=j
+print("це найдовше слово:",loget)
+
+name=input("ведіться шья людини:")
+if name.istitle()and not any(jet.isdigit()for jet in name):
+   print("ваше імя правильне:")
+else:
+   print("ваше імя неправильне:")
+
