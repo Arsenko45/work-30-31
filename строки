@@ -177,4 +177,9 @@ number=5790
 target=source_one.format(number)
 print(target)
 
+print("The float number is: {:f}".format(541.67890))
+print("The float number is: {:.2f}".format(541.67890))
 
+number=6.7894561204
+print("{:.3f}"format(number))
+print("{:.4f}"format(number))
