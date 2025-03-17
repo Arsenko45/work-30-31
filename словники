@@ -1,1 +1,19 @@
+my_tehnik={"printer":"Xerox",'paper': "A4",'drafting pads':"blank",'scanner':'hybrid','table':'wood','table light':'LED'}
+print("Я купив принтер від:"+my_tehnik['printer']+".")
+print("Я також купив сканер від:"+my_tehnik['scanner']+".")
+print("Папір має розмір:"+my_tehnik['paper']+".")
+print("блокноти для креслення це:"+my_tehnik['drafting pads']+".")
 
+import random
+names=["Roska","Barsik","Ron","Elava","Mala"}
+cats=[]
+for i in range(5):
+   cat={'name':names[i],
+       "age":(random.radint(1,12))}
+cats.append(cat)
+max_cat=cats[0]
+for some_cat in cats:
+   if some_cat.get("age")>max_cat.get('age')
+      max_cat=some_cat
+print(cats)
+print(max_cat)
