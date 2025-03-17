@@ -145,3 +145,36 @@ if name.istitle()and not any(jet.isdigit()for jet in name):
 else:
    print("ваше імя неправильне:")
 
+text=f"my name is Yurii"
+print(text)
+print(type(text))
+
+a="Yurii"
+text=f"My name is {a.upper()}"
+print(text)
+
+number="tree"
+age=25
+info=f"the enter number: {number} and age; {age}"
+print(info)
+
+my_name="Name: {0}/nAge {1} years old".format("Yurii",26)
+print(type(my_name))
+print(my_name)
+
+text="Hello , {0}{0}{0}{0},{0},{0}".format("Jack")
+print(text)
+
+string_1="Hello {:s}"
+name_1="Yurii"
+info_format=string_1.format(name_1)
+print(info_format)
+
+print("The enter number: {:d}".format(4876))
+
+source_one="{:d}символів"
+number=5790
+target=source_one.format(number)
+print(target)
+
+
