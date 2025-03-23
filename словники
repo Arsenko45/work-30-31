@@ -38,3 +38,7 @@ for j in text:
 text={"x":12,"y":34,5,"z":1000,"f":"numbers","name":"Yurii",90:"number"}
 for j in text:
    print(j)
+
+my_week={1:"Monday",2"Tuesday",3:"Wensday",4:"Thuesday",5:"Friday",6:"Satuday",7:"Sunday"}
+days=int(input("Ведіть номер дня тижня:"))
+print("Result:",my_week.get(days))
