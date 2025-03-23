@@ -31,5 +31,10 @@ dict_two={x:x**x for x in range(12)}
 print(dict_one)
 print(dict_two)
 
+text={"x":12,"y":34,5,"z":1000,"f":"numbers","name":"Yurii",90:"number"}
+for j in text:
+   print(text[j])
 
-
+text={"x":12,"y":34,5,"z":1000,"f":"numbers","name":"Yurii",90:"number"}
+for j in text:
+   print(j)
