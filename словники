@@ -24,3 +24,8 @@ print(a)
 
 my_dict={"a":1,"b":2,"c":3,"name":"Yurii",12323:"number"}
 print(my_dict.popitem)
+
+dict_one={y:y*y for y in range(15)}
+print(dict_one)
+
+
