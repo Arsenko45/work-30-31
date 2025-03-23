@@ -46,3 +46,7 @@ print("Result:",my_week.get(days))
 def my_function(1st):
    return{element:element for element in 1st}
 print(my_function(([1, 2, 3, 4, -6, 0.6,"my"]))
+
+my_cat={"name":"Murka","age":5,"color":"black",12:"Viskas"}
+print("{p[name]}'s age is:{p[age]} years and color is: {p[color]} and 12 is {p[12]}.".format(p=my_cat))
+
