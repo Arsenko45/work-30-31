@@ -50,3 +50,7 @@ print(my_function(([1, 2, 3, 4, -6, 0.6,"my"]))
 my_cat={"name":"Murka","age":5,"color":"black",12:"Viskas"}
 print("{p[name]}'s age is:{p[age]} years and color is: {p[color]} and 12 is {p[12]}.".format(p=my_cat))
 
+text=input("Ведіть строки:")
+dict_one={}
+for letter in text:
+  if dict_one.get(letter)is None
