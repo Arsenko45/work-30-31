@@ -21,3 +21,6 @@ print(max_cat)
 text={"x":12,"y":34,5,"z":1000,"f":"numbers"}
 a='{x}+{y}+{z}+{f}.'.format_map(text)
 print(a)
+
+my_dict={"a":1,"b":2,"c":3,"name":"Yurii",12323:"number"}
+print(my_dict.popitem)
