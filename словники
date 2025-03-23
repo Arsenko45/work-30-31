@@ -17,3 +17,7 @@ for some_cat in cats:
       max_cat=some_cat
 print(cats)
 print(max_cat)
+
+text={"x":12,"y":34,5,"z":1000,"f":"numbers"}
+a='{x}+{y}+{z}+{f}.'.format_map(text)
+print(a)
