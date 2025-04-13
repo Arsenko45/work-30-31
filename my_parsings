@@ -1,0 +1,31 @@
+import requests
+from bs4 import BeautifulSoup as BS4
+r=requests.get("https://en.wikipedia.org/wiki/Python_(programming_language)")
+print(type(r))
+print(r)
+r.raise_for_status()
+pprint(r)
+html=r.text
+parser=BS4(html, 'html.parser')
+element=parser.select('div#vector-toc ul li a')
+print(element)
+for element in element:
+    title=element.getText()
+    link=element
+    print(f'Заголовок: {title}, посилання: {link} end=" "')
+    
+from bs4 import BeautifulSoup as BS4
+r=requests.get("https://uk.wikipedia.org/wiki/Python")
+print(type(r))
+print(r)
+r.raise_for_status()
+pprint(r)
+html=r.text
+parser=BS4(html, 'html.parser')
+element=parser.select('div#toc ul il a')
+print(element)
+for element in element:
+    title=element.getText()
+    link=element
+    print(f'Заголовок: {title}, посилання: {link} end=" "')
+    
