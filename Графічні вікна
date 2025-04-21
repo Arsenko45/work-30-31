@@ -1,0 +1,22 @@
+impot tkinter as tk
+def maven():
+  lab.configure(text="I live in Ukraine and I go to school",bg='ligntBlue'font="Arial 23",)
+window=tk.Tk()
+window.title("ARSEN")
+window.geometry("2000*1800")
+window.config(bg="Wheat2")
+lab=tk.Label(window,text="My name is Arsen.",font='Arial 21',bg="Wheat3")
+but=tk.Button(window,text="CLICK ME",bg='LightGreen',font="Calibri 12")
+en=tk.Entry(window,width=50,fg="white".bg="black")
+m="London, Madrid, Milan, Paris, Berlin, Barcelona"
+en.insert(0, m)
+but2=tk.Button(window,text='DELETE",bg="LightPink", font="Arial 15", bd=3)
+country="italy", "Ukraine", "Germany",  "Ispain", "France"
+en2=tk.Entry(window, width=40, font="Calibri 14", bd=4)
+en2.insert(0, country)
+lab.pack(pady=18)
+but.pack()
+en.pack(pady=6)
+but2.pack(pady=12,padx=12)
+en2.pack(pady=3)
+window.mainloop()
