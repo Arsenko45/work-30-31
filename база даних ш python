@@ -14,3 +14,43 @@ cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, 
 cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, ?)', ('Timofiy', "Bondar", 'syms123@gmail.com", 45))
 con.commit()
 con.close()
+
+import sqlite3
+con=sqlite3.connect('example.db')
+cursor=con.cursor()
+cursor.execute('UPDATE Users SET age=? Where username=?', (51, 'newuser'))
+con.commit()
+con.close()
+
+
+import sqlite3
+con=sqlite3.connect('testing.db')
+cursor=con.cursor()
+cursor.execute('DELETE FROM User WHERE username=?', ('newuser',))
+cursor.execute('DELETE FROM User WHERE username=?', ('Yurri',))
+cursor.execute('DELETE FROM User WHERE username=?', ('Max',))
+cursor.execute('DELETE FROM User WHERE username=?', ('Timofiy',))
+con.commit()
+con.close()
+
+import sqlite3
+con=sqlite3.connect('example.db')
+cursor=con.cursor()
+cursor.execute('SELECT * FROM Users')
+users=cursor.fetchall()
+for user in user:
+    print(user)
+con.close()
+
+import sqlite3
+con=sqlite3.connect('example.db')
+cursor=con.cursor()
+cursor.execute('SELECT username, age FROM Users WHERE age >?', (30))
+users=cursor.fetchall()
+
+
+
+
+
+
+
