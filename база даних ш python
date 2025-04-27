@@ -1,0 +1,6 @@
+import sqlite3
+con=sqlite3.connect('example.db')
+cursor=con.cursor()
+cursor.execute('''CREATE TABLE IF NOT EXISTS Users(id INTEGER PRIMARE KEY,  username TEXT NOT NULL, lastname TEXT NOT NULL, email TEXT NOT NULL, age   INTEGER)''')
+con.commit()
+con.close()
