@@ -4,3 +4,13 @@ cursor=con.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS Users(id INTEGER PRIMARE KEY,  username TEXT NOT NULL, lastname TEXT NOT NULL, email TEXT NOT NULL, age   INTEGER)''')
 con.commit()
 con.close()
+
+import sqlite3
+con=sqlite3.connect('example.db')
+cursor=con.cursor()
+cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, ?)', ('newuser', "Shevchenko", 'python123@gmail.com", 23))
+cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, ?)', ('Max', "Luts", 'qwerty123@gmail.com", 38))
+cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, ?)', ('Yurri', "Shevchenko", 'python123@gmail.com", 34))
+cursor.execute('INSERT INTO USER(username, lastname, email, age)VALUES(?, ?, ?, ?)', ('Timofiy', "Bondar", 'syms123@gmail.com", 45))
+con.commit()
+con.close()
