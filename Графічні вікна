@@ -31,7 +31,7 @@ wind.config(bg="azure3")
 var=tk.StringVar()
 rd1=tk.Radiobutton(wind, text="Ukraine", variable=var, value="Україні")
 rd2=tk.Radiobutton(wind, text="Germany", variable=var, value="Німечині")
-but=tk.Button(wind, text="click me", bg="LightPink", command=click)
+but=tk.Buttoт(wind, text="click me", bg="LightPink", command=click)
 rd1.pack()
 rd2.pack()
 but.pack(pady=5)
@@ -49,9 +49,30 @@ rd2.pack()
 rd3.pack()
 root.mainloop()
 
-
-
-
+impot tkinter as tk
+def maven():
+   if var.get()==1
+      lab['bg']="LightGreen"
+   elif var.get()==2
+       lab['bg']="LightBlue"
+    elif var.get()==3
+       lab['bg']="LightPink" 
+window=tk.Tk()
+window.title("ARSEN")
+window.geometry("400*300")
+window.config(bg="cyan")
+var=tk.StringVar()
+rd=tk.Radiobutton(root,text="Ви обрали блакитний колір", font="Arial 14", bg="cyan", variable=var, value=1)
+rd2=tk.Radiobutton(root,text="Ви обрали синій колір", font="Arial 14", bg="cyan", variable=var, value=2)
+rd3=tk.Radiobutton(root,text="Ви обрали рожевий колір", font="Arial 14", bg="cyan", variable=var, value=3)
+but=tk.Button(window, text="click me", bg="orange", command=maven)
+lab=tk.Laber(window, text="*", font="Calibri 12", widtn=45, height=15, bg="snow3")
+rd1.pack(pady=1)
+rd2.pack(pady=2)
+rd3.pack(pady=3)
+but.pack(pady=4)
+lab.pack(pady=8)
+window.mainloop()
 
 
 
