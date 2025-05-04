@@ -29,17 +29,25 @@ wind.title("My window")
 wind.geometry("300x200")
 wind.config(bg="azure3")
 var=tk.StringVar()
-rdl=tk.Radiobutton(wind, text="Ukraine", variable=var, value="Україні")
+rd1=tk.Radiobutton(wind, text="Ukraine", variable=var, value="Україні")
 rd2=tk.Radiobutton(wind, text="Germany", variable=var, value="Німечині")
 but=tk.Button(wind, text="click me", bg="LightPink", command=click)
-rdl.pack()
+rd1.pack()
 rd2.pack()
 but.pack(pady=5)
-window.mainloop()
+wind.mainloop()
 
-
-
-
+impot tkinter as tk
+root=tk.Tk()
+root.geometry("600x300")
+root.config(bg="snow3")
+rd1=tk.Radiobutton(root,text="Я на цьому тижні поїду до Мілану", font='Calibri14' , bg="snow3" , variable=var, value=1)
+rd2=tk.Radiobutton(root,text="Я на цьому тижні поїду до Берліну", font='Calibri15' , bg="LightGreen" , variable=var, value=2)
+rd3=tk.Radiobutton(root,text="Я на цьому тижні поїду до Мадриду", font='Calibri16' , bg="snow3", fg="purple" variable=var, value=3)
+rd1.pack()
+rd2.pack()
+rd3.pack()
+root.mainloop()
 
 
 
