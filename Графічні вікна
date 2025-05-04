@@ -20,3 +20,31 @@ en.pack(pady=6)
 but2.pack(pady=12,padx=12)
 en2.pack(pady=3)
 window.mainloop()
+
+impot tkinter as tk
+def click():
+   print("Я живу в:", var.get())
+wind=tk.Tk()
+wind.title("My window")
+wind.geometry("300x200")
+wind.config(bg="azure3")
+var=tk.StringVar()
+rdl=tk.Radiobutton(wind, text="Ukraine", variable=var, value="Україні")
+rd2=tk.Radiobutton(wind, text="Germany", variable=var, value="Німечині")
+but=tk.Button(wind, text="click me", bg="LightPink", command=click)
+rdl.pack()
+rd2.pack()
+but.pack(pady=5)
+window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
