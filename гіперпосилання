@@ -74,11 +74,15 @@ om=tk.OptionMenu(wind, var,*my_cars, command=display_select)
 om.pack(expand=True)
 wind.mainloop()
 
-
-
-
-
-
+import tkinter as tk
+root=tk.Tk()
+root.config(bg="orange")
+my_var=tk.StringVar()
+om1=tk.OptionMenu(root, my_var, "Apple", "Orange", "Lemon", "Grape", "Ananas")
+but=tk.Button(root, text="click me", font="Calibri 11", bg="LightGreen"
+but.place(x=20, y=50)
+om1.place(x=100, y=50)
+root.mainloop()
 
 
 
