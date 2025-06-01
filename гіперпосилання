@@ -22,7 +22,7 @@ def my_India():
     webbrouser.open_new(url)
 url="https://www.india.gov.in/"
 root=tk.Tk()
-root title("My project")
+root.title("My project")
 root.geometry("550x400+400+20")
 root.resizable(0, 0)
 root.config(bg="azure3")
@@ -46,6 +46,115 @@ countries2_menu.add_command(lebel="India")
 main_menu.add_cascade(lable="Group Countries 1",menu countries2_menu)
 
 root.mainloop()
+
+import tkinter as tk
+window=tk.Tk()
+window.geometry("400x300")
+window.config(bg="cornsilk3")
+var_str=tk.StringVar()
+var_str.set(List Companies")
+var_str.set("Boing")
+om=tk.OptionMenu(window, var_str, "Dell", "BMW", "Google", "Acer", "Lenovo", "Boing", "Subary")
+om.pack(pady=42)
+window.mainloop()
+
+import tkinter as tk
+def display_select(choice)
+  choice=var.get()
+  print(choice)
+wind=tk.Tk()
+wind.title("My Option Menus")
+wind.geometry("480x420")
+wind.resizable(0, 0)
+wind.config(bg="ivor3")
+my_cars=["Toyota", "Suzuki", "Subaru", "Citroen", Ferrari", "Reno", "Mers", "BMW"]
+var=tk.StringVar()
+var.set(my_cars[7])
+om=tk.OptionMenu(wind, var,*my_cars, command=display_select)
+om.pack(expand=True)
+wind.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
