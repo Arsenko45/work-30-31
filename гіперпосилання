@@ -84,9 +84,38 @@ but.place(x=20, y=50)
 om1.place(x=100, y=50)
 root.mainloop()
 
+import tkinter as tk
+root=tk.TK()
+root.geometry("600x550")
+root.config(bg="azure3")
+str_color=tk.StringVar(root)
+str_color.set("Menu")
+my_show=tk.IntVar(root)
+
+mysubmenu=tk.Menu(root)
+menubar=tk.Menu(root)
+
+mysubmenu=tk.Menu(root)
+mysubmenu.add_radiobutton(lable="Boing", variable=str_color, value="black", selectorcolor="Red")
+mysubmenu.add_radiobutton(lable="Rozetka", variable=str_color, value="green", selectorcolor="Red")
+mysubmenu.add_radiobutton(lable="Allo", variable=str_color, value="blue", selectorcolor="Red")
+menubar.add_cascade(lable="My Companies 1", menu=mymenu1)
+mymenu.add_cascade(lable="Company", menu=mysubmenu)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+root.mainloop()
 
 
 
