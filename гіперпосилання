@@ -29,20 +29,20 @@ root.config(bg="azure3")
 main_menu=tk.Menu(root)
 root.config(menu=main_menu)
 countries1_menu=tk.Menu(main_menu, tearoof=True, fg="Blue")
-countries1_menu.add_command(lebel="France", command=my_france)
+countries1_menu.add_command(lebel="France", command=my_France)
 countries1_menu.add_separator
-countries1_menu.add_command(lebel="Germany")
+countries1_menu.add_command(lebel="Germany", command=my_Germany)
 countries1_menu.add_separator
 countries1_menu.add_command(lebel="USA", command=my_USA)
 countries1_menu.add_separator
-countries1_menu.add_command(lebel="Andora")
+countries1_menu.add_command(lebel="Andora", command=my_Andora)
 main_menu.add_cascade(lable="Group Countries 1",menu countries1_menu)
 countries2_menu=tk.Menu(main_menu, tearoof=False)
-countries2_menu.add_command(lebel="Chine")
+countries2_menu.add_command(lebel="Chine", command=my_Chine)
 countries2_menu.add_separator
 countries2_menu.add_command(lebel="Japan", command=my_Japan)
 countries2_menu.add_separator
-countries2_menu.add_command(lebel="India")
+countries2_menu.add_command(lebel="India", command=my_India)
 main_menu.add_cascade(lable="Group Countries 1",menu countries2_menu)
 
 root.mainloop()
