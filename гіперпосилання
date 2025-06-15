@@ -101,31 +101,51 @@ mysubmenu.add_radiobutton(lable="Rozetka", variable=str_color, value="green", se
 mysubmenu.add_radiobutton(lable="Allo", variable=str_color, value="blue", selectorcolor="Red")
 menubar.add_cascade(lable="My Companies 1", menu=mymenu1)
 mymenu.add_cascade(lable="Company", menu=mysubmenu)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 root.mainloop()
 
+import tkinter as tk
+wind=tk.Tk()
+wind.title("My optionmenu")
+wind.geometry("450x300+350+30")
+wind.resizable(0, 0)
+wind.config(bg="orange")
+my_cities=["Lviv", "Odessa", "Tokio", "Stambul", "London", "Viden", "Ottaava"]
+strvar=tk.StringVar(wind)
+strvar.set(my_cities[2])
+opm=tk.OptionMenu(wind,strvar,*my_cities
+opm.pack(pady=8)
 
-
-
-
-
-
-
-
-
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Lviv"
+     webbrouser.open_new("https://lviv.travel/en")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Odessa"
+     webbrouser.open_new("https://odessa.online/")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Tokio"
+     webbrouser.open_new("https://hr.wikipedia.org/wiki/Tokio")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Stambul"
+     webbrouser.open_new("https://traveller-eu.ru/stambul")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="London"
+     webbrouser.open_new("https://www.momondo.dk/flybilletter/london?sck=SEM&skipapp=true")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Viden"
+     webbrouser.open_new("https://ordnet.dk/ddo/ordbog?query=viden")
+def web_brouser()
+   selected=strvar.get()
+   if selected=="Ottaava"
+     webbrouser.open_new("https://ottawa.ca/en")
+but=tk.But(wind, text="please click me", bg="LightGreen", command=web_brouser)
+but.pack
+wind.mainloop()
 
 
 
