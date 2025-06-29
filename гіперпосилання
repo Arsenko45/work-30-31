@@ -150,12 +150,11 @@ wind.mainloop()
 import tkinter as tk
 def my_greet():
    print(f"Hello, 
-
 root=tk.Tk()
 root.geometry("200x180")
 root.title("Python")
 lable=tk.Lable(root, text="The enter  your name:", font="Calibri12")
-entry=tk.Entry(root,text="Click me")
+entry=tk.Entry(root,text="Click me", font="Calibri12")
 leble.pack(pady=6)
 entry.pack()
 root.mainloop()
