@@ -161,9 +161,20 @@ entry.pack()
 root.mainloop()
 
 import tkinter as tk
-
-
-
+def click():
+   lab_data['text']="Я живу в %s"%entry.get()
+win=tk.Tk()
+win.geometry=(500x300)
+win.config(bg="snow3")
+lab_name=tk.Lable(win, text="Введіть країну проживання:", bg="snow3")
+entry=tk.Entry(win, bd=3, font="Arial 14")
+button=tk.Button(win, text="Згенерувати все речення", command=click)
+lab_data=tk.Lable(win, fg="blue")
+lab_name.pack()
+entry.pack(pady=6)
+buttton.pack()
+lab_date.pack(side="left", pady=13)
+win.mainloop()
 
 
 
