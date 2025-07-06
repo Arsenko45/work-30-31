@@ -175,9 +175,13 @@ buttton.pack()
 lab_date.pack(side="left", pady=13)
 win.mainloop()
 
+import webbrowser
+webbrowser.open(f'https://web.whatsapp.com/send?phone')
 
-
-
+import webbrowser
+phone_number="+380963866523"
+messsege="Підготувати це повідомлення для відправки"
+webbrowser.open(f"https://web.whatsapp.com/send?phone=={phone_number}&text={messege}")
 
 
 
